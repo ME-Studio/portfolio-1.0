@@ -1,0 +1,65 @@
+/*Neon*/
+.glow{
+  	 text-align: center;
+  	 font-size: 100px;
+  	 margin: 1em auto;
+ 	    text-decoration: none;
+	   -webkit-transition: all 0.5s;
+	   -moz-transition: all 0.5s;
+	   transition: all 0.5s;
+
+
+     -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+      -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+      animation: neon2 1.5s ease-in-out infinite alternate;
+       color: #ffffff;
+}
+
+/*.glow a:hover {
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+  color: #ffffff;
+}*/
+
+/*glow for webkit*/
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+/*glow for mozilla*/
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  }
+}
+/*glow*/
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228DFF, 0 0 70px #228DFF, 0 0 80px #228DFF, 0 0 100px #228DFF, 0 0 150px #228DFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 70px #d8d2cb, 0 0 10px #c5beb7, 0 0 5px #aea6a0, 0 0 5px #98918b;
+  }
+  to {
+    /text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228DFF, 0 0 35px #228DFF, 0 0 40px #228DFF, 0 0 50px #228DFF, 0 0 75px #228DFF;
+  	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 35px #d8c1a8, 0 0 20px #c3ad98, 0 0 10px #ae9a87, 0 0 10px #988776;
+  }
+}
+
+/* ***** GLOW ALIGN (ME Studio) ***** */
+#glowAlign{
+  margin-left: 110px; 
+  margin-top: 110px;
+}
+
+#glowHeader{
+  font-size: 100px; 
+  color: #fff; 
+  font-family: 'Megrim', cursive;
+}

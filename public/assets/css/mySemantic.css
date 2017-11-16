@@ -1,0 +1,81 @@
+/* ******************** HOMEPAGE ******************** */
+
+/* ***** BREADCRUMB ***** */
+#myBreadCrumb{
+	padding-top: 16px;
+}
+
+#myBreadCrumb a, div{
+	font-family: 'Audiowide', cursive;
+	color: white;
+	margin: 0 auto;
+}
+
+#myBreadCrumb a:hover{
+	text-decoration: overline;
+}
+
+#myBreadCrumb .divider{
+	color: rgb(255, 255, 255);
+}
+
+#myBreadCrumb .active{
+	border-bottom: 2px solid white;
+}
+
+/* ***** DROP MESSAGE (CONTACT) ***** */
+#myDropMsgBtn{
+	background-color: #000;
+	color: #fff;
+}
+#myDropMsgBtn:hover{
+	background-color: #000;
+	color: #fff;
+}
+#myDropMsgBtn:focus{
+	background-color: #000;
+	color: #fff;
+	border: 1px solid white;
+}
+
+#myDropMsgBtn .active{
+	background-color: #000;
+	color: #fff;
+}
+
+#myDropMsgBtn .active:hover{
+	background-color: #000;
+	color: #fff;
+}
+
+#mySucMsg {
+	background-color: #fff;
+	color: #000;
+	border: 1px solid black;
+}
+
+#mySucMsg .header{
+	color: #000;
+}
+
+
+/* ***** DROP MENU (SOCIAL) ***** */
+#myDropMenu .menu{
+	background-color: #000;
+	box-shadow: none;
+	border: none;
+	margin-top: 20px;
+
+}
+
+#myDropMenu .menu>.item{
+	padding: 16px 0!important;
+}
+
+#myDropMenu .menu>.item>.icon{
+	margin-right: 0;
+}
+
+/* ******************** HOMEPAGE ******************** */
+
+
