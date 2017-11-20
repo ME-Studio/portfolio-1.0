@@ -35,7 +35,6 @@
 #myDropMsgBtn:focus{
 	background-color: #000;
 	color: #fff;
-	border: 1px solid white;
 }
 
 #myDropMsgBtn .active{
@@ -49,9 +48,11 @@
 }
 
 #mySucMsg {
+	font-family: 'Quicksand', sans-serif;
 	background-color: #fff;
 	color: #000;
 	border: 1px solid black;
+
 }
 
 #mySucMsg .header{
@@ -77,5 +78,76 @@
 }
 
 /* ******************** HOMEPAGE ******************** */
+
+
+
+/* ******************** PROJECT PAGE ******************** */
+
+/* ***** LEFT FLOATED CONTAINER ***** */
+
+#leftFloatedContainer{
+	margin-left: 80px!important; 
+	margin-top: 7em;
+}
+
+/* ***** HIDDEN CONTENT (SHORT DESC - PROJECT REVEAL) ***** */
+
+#myHiddenContent{
+	width: 300px!important;
+	height: 198px;
+}	
+
+#myHiddenContent a, div{
+	font-family: 'Quicksand', sans-serif;
+}
+
+#myContent{
+	color: white; 
+	padding-top: 10px; 
+	padding-left: 10px; 
+	text-align: center;
+}
+
+#visibleContentBorder{
+	border: 1px solid white;
+}
+
+/* ***** FIXED BREADCRUMB ***** */
+#fixedBread{
+	margin-top: 40px;
+	margin-bottom: 10px;
+	padding-top: 10px; 
+	padding-bottom: 10px; 
+
+	transition:
+          box-shadow 0.5s ease,
+          padding 0.9s ease
+        ;
+}
+
+#fixedBread #myBreadCrumb{
+	padding-top: 0; 
+	padding-bottom: 10px;
+}
+
+#fixedBread #myBreadCrumb .active{
+	border-bottom: none;
+}
+
+
+#fixedBread.fixed {
+        background-color: #fff;
+        /*border: 1px solid black;*/
+        box-shadow: 1px 3px 5px rgba(225, 225, 225, 10);
+        
+        z-index: 10;
+        margin-top: 0;
+      }
+
+#fixedBread.fixed .divider{
+	color: black;
+}
+
+/* ******************** PROJECT PAGE ******************** */
 
 

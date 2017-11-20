@@ -1,26 +1,31 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
 html{
 	height: 100%;
 	width: 100%;
 }
 
-body {
-  background-image: url(/assets/picture/Webp.net-gifmaker.gif);
-  /*background-size: cover;*/
- /*background-repeat: no-repeat;
-  */
+a{
+	color: white;
+	outline: none;
+}
+
+a:hover{
+	color: grey;
 }
 
 .topSpace{
-	margin: 2em auto;
+	/*margin: 2em auto;*/
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 
 .fakeBorder{
 	border: 0.5px solid white;
-}
-
-#defaultFont{
-	font-family: 'Audiowide', cursive;
-	color: white;
 }
 
 .sexy_line{ 
@@ -31,4 +36,44 @@ body {
     background:white;
     background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 400, from(#000), to(#fff));
 }
+
+#homeBG {
+  background-image: url(/assets/picture/Tube-Right.gif);
+  /*background-size: cover;*/
+ /*background-repeat: no-repeat;
+ background-attachment: fixed;*/
+  
+}
+
+#defaultFont{
+	font-family: 'Audiowide', cursive;
+	color: white;
+}
+
+/* ********** GEOMETRY DOTS ********** */
+#dots {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 16rem;
+	height: 100vh;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

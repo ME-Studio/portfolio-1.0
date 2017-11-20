@@ -4,17 +4,22 @@
 	<title>Me Studio</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Audiowide|Bangers|Monoton|Press+Start+2P|Zilla+Slab+Highlight|Black+Ops+One|Bungee+Inline|Share|Cinzel+Decorative|Megrim|Raleway+Dots|Bungee+Shade|Barrio|Bungee+Outline|Faster+One|Khmer" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/glow.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/mySemantic.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/indexCSS.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/glow.css">
+
+
+
 </head>
-<body>
+<body id="homeBG">
 	<div class="ui container topSpace">
 		<div class="ui grid container">
 		  	
+			<!-- ******** NAME ******** -->
 
 		  	<div class="row ">
-
+		  		
+		  		<!-- ******** M LOGO ******** -->
 		  		<div class="right aligned three wide column ">
 		  			<i class="big maxcdn icon" style="font-size: 50px; border: 1px solid white"></i>
 		  		</div>
@@ -26,7 +31,8 @@
   						<div id="defaultFont" class="sub header">DEVELOPER</div>
   					</h1>
   				</div>
-
+  				
+  				<!-- ******** FILLER ******** -->
   				<div class="left aligned three wide column ">
   					
   				</div>
@@ -36,28 +42,31 @@
 			
 			<div class="row ">
 				
+				<!-- ******** SOCIAL DROPDOWN ******** -->
 				<div class="right aligned three wide column ">
 		  			<div class="ui dropdown" id="myDropMenu">
 							<i class="big white feed icon" style="padding-top: 13px; padding-bottom: 13px;"></i>
 							<div class="menu">
-							    <div class="item"><i class="inverted big linkedin square icon"></i></div>
-							    <div class="item"><i class="inverted big github square icon"></i></div>
-							    <div class="item"><i class="inverted big facebook square icon"></i></div>
-							    <div class="item"><i class="inverted big instagram icon"></i></div>
+							    <a class="item" href="/"><i class="inverted big linkedin square icon"></i></a>
+							    <a class="item" href="/projects"><i class="inverted big github square icon"></i></a>
+							    <a class="item" href="/"><i class="inverted big facebook square icon"></i></a>
+							    <a class="item" href="/projects"><i class="inverted big instagram icon"></i></a>
 							</div>
 					</div>
 				</div>
 				
+				<!-- ******** BREADCRUMB ******** -->
 				<div class=" ten wide centered column center aligned ">
 					<div class="ui large breadcrumb" id="myBreadCrumb">
 					  <a class="active section">Home</a>
 					  <span class="divider">/</span>
-					  <a class="section">Projects</a>
+					  <a href="/projects" class="section">Projects</a>
 					  <span class="divider">/</span>
 					  <a class="section">About</a>
 					</div>
 				</div>
 				
+				<!-- ******** CONTACT DROPDOWN ******** -->
 				<div class="left aligned three wide column ">
 		  			<div class=" ui icon floating dropdown small button" id="myDropMsgBtn">
 						<i class="big white address book icon"></i>
@@ -75,6 +84,7 @@
 			
 			<div class="row ">
 				
+				<!-- ******** GLOW ME STUDIO ******** -->
 				<div class="center aligned six wide column glow " id="glowAlign">
 					<a class="ui huge header" id="glowHeader">
 						 <span style="margin-left: 130px;">M e</span>
@@ -87,17 +97,25 @@
 		</div>
 	</div>
 
-	
+
+<!-- ****** MOVING BACKGROUND ****** -->
+
+<canvas id="dots" width="300" height="300" ></canvas>
+
+
+
 
 	  	
   
-
+	<script src='http://requirejs.org/docs/release/2.1.15/minified/require.js'></script>
+	<script src='https://rawgit.com/ironwallaby/delaunay/master/delaunay.js'></script>
 	<script
  		src="https://code.jquery.com/jquery-3.1.1.min.js"
   		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   		crossorigin="anonymous">
   	</script>
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
+  	<script type="text/javascript" src="assets/js/geometryBG.js"></script>
   	<script type="text/javascript" src="assets/js/indexJS.js"></script>
 </body>
 </html>
