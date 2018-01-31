@@ -17,6 +17,10 @@ app.get("/projects", function(req,res){
 	res.render("projectPage");
 });
 
+app.get("/about", function(req,res){
+	res.render("aboutPage");
+});
+
 
 
 

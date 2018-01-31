@@ -25,7 +25,7 @@
 
 /* ***** DROP MESSAGE (CONTACT) ***** */
 #myDropMsgBtn{
-	background-color: #000;
+	background-color: transparent;
 	color: #fff;
 }
 #myDropMsgBtn:hover{
@@ -62,7 +62,7 @@
 
 /* ***** DROP MENU (SOCIAL) ***** */
 #myDropMenu .menu{
-	background-color: #000;
+	background-color: transparent;
 	box-shadow: none;
 	border: none;
 	margin-top: 20px;

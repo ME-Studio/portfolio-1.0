@@ -141,6 +141,16 @@ $("#project7").on("click", function(){
 });
 
 
+$("#contactMeToday").on("click", function(){
+  // $("#readMoreTitle").text(readMore.project7.title);
+  // $("#readMoreImage").attr("src", readMore.project7.image);
+  // $("#readMoreDes").html(readMore.project7.description);
+  // $("#readMoreLink").attr("href", readMore.project7.link);
+
+  $('.ui.basic.modal').modal('show').transition('flash');
+});
+
+
 
 
 

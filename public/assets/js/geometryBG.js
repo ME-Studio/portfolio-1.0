@@ -9,7 +9,7 @@ var particleCount = 40,
 	flareSizeBase = 100,
 	flareSizeMultiplier = 100,
 	lineWidth = 1,
-	linkChance = 75, // chance per frame of link, higher = smaller chance
+	linkChance = 65, // chance per frame of link, higher = smaller chance
 	linkLengthMin = 5, // min linked vertices
 	linkLengthMax = 7, // max linked vertices
 	linkOpacity = 0.25; // number between 0 & 1
@@ -23,7 +23,7 @@ var particleCount = 40,
 	renderLinks = true,
 	renderMesh = false,
 	flicker = true,
-	flickerSmoothing = 15, // higher = smoother flicker
+	flickerSmoothing = 30, // higher = smoother flicker
 	blurSize = 0,
 	orbitTilt = true,
 	randomMotion = true,
@@ -143,7 +143,6 @@ function init() {
 	}
 	else {
 		// Mouse move listener
-		console.log('Using mouse movement');
 		document.body.addEventListener('mousemove', function(e) {
 			//console.log('moved');
 			mouse.x = e.clientX;
@@ -322,24 +321,24 @@ Flare.prototype.render = function() {
 		r = ((this.z * flareSizeMultiplier) + flareSizeBase) * (sizeRatio() / 1000);
 
 	// Feathered circles
-	/*
-	var grad = context.createRadialGradient(x+r,y+r,0,x+r,y+r,r);
-	grad.addColorStop(0, 'rgba(255,255,255,'+f.o+')');
-	grad.addColorStop(0.8, 'rgba(255,255,255,'+f.o+')');
-	grad.addColorStop(1, 'rgba(255,255,255,0)');
-	context.fillStyle = grad;
-	context.beginPath();
-	context.fillRect(x, y, r*2, r*2);
+	
+	// var grad = context.createRadialGradient(x+r,y+r,0,x+r,y+r,r);
+	// grad.addColorStop(0, 'rgba(255,255,255,'+f.o+')');
+	// grad.addColorStop(0.8, 'rgba(255,255,255,'+f.o+')');
+	// grad.addColorStop(1, 'rgba(255,255,255,0)');
+	// context.fillStyle = grad;
+	// context.beginPath();
+	// context.fillRect(x, y, r*2, r*2);
 	context.closePath();
-	*/
+	
 
-	context.beginPath();
-	context.globalAlpha = this.opacity;
-	context.arc(pos.x, pos.y, r, 0, 2 * Math.PI, false);
-	context.fillStyle = this.color;
-	context.fill();
-	context.closePath();
-	context.globalAlpha = 1;
+	// context.beginPath();
+	// context.globalAlpha = this.opacity;
+	// context.arc(pos.x, pos.y, r, 0, 2 * Math.PI, false);
+	// context.fillStyle = this.color;
+	// context.fill();
+	// context.closePath();
+	// context.globalAlpha = 1;
 };
 
 // Link class
