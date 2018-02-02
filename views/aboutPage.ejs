@@ -17,6 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="assets/css/indexCSS.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/glow.css">
 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 
 	</head>
 	<body id="projectBG" style="min-width: 457px;">
@@ -54,8 +55,8 @@
 				
 				<div class="row">
 					<div class="column">
-						
-							<div class="ui header">
+							<div id="trigger1"></div>
+							<div id="fade1" class="ui header">
 								<h2>
 								Hello,<br />
 								Is it me your looking for ?
@@ -69,7 +70,8 @@
 					<div class="column">
 						
 							<div class="description topSpace">
-				       			<p>I'm a india based web developer and bit of a designer.
+								<div id="trigger2"></div>
+				       			<p id="fade2">I'm a india based web developer and bit of a designer.
 				       				<br />New experiences and challenges are my thing.
 				       				<br />If you have any cool projects or opportunities, get in touch!
 				       		 	</p>
@@ -83,12 +85,14 @@
 						
 							<div class="ui list" >
 								
-								<div class="item">
+								<div id="trigger3"></div>
+								<div id="fade3" class="item">
 									<div class="header" style="font-size: 20px; color: #ffffff; font-family: 'Quicksand', sans-serif;">Technologies</div>
 								</div>
-								
+
 								<div style="padding-top: 10px">
-									<a class="item">
+									<div id="trigger4"></div>
+									<a id="fade4"  class="item">
 										<i class="right triangle icon" style="color: #ffffff;"></i>
 										<span class="content">
 											<span class="header" style="font-size: 17px; color: #ffffff; font-family: 'Quicksand', sans-serif; font-weight: 700;">Day-to-day comfort</span>
@@ -96,8 +100,9 @@
 									</a>	
 								</div>
 							</div>
-
-							<div class="ui list" style="padding-left: 25px; font-size: 16px;">
+							
+							<div id="trigger5"></div>
+							<div id="fade5" class="ui list" style="padding-left: 25px; font-size: 16px;">
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">JavaScript/JQuery</div>
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">HTML 5/CSS</div>
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">Semantic UI</div>
@@ -109,7 +114,8 @@
 							</div>
 
 							<div>
-									<a class="item">
+									<div id="trigger6"></div>
+									<a id="fade6" class="item">
 										<i class="right triangle icon" style="color: #ffffff;"></i>
 										<span class="content">
 											<span class="header" style="font-size: 17px; color: #ffffff; font-family: 'Quicksand', sans-serif; font-weight: 700;">Have experience with</span>
@@ -117,8 +123,9 @@
 									</a>	
 								
 							</div>
-
-							<div class="ui list" style="padding-left: 25px; font-size: 16px; list-style-type: circle;">
+							
+							<div id="trigger7"></div>
+							<div id="fade7" class="ui list" style="padding-left: 25px; font-size: 16px; list-style-type: circle;">
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">Node JS</div>
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">Express JS</div>
 								<div class="item" style="color: white; list-style-type: circle; list-style-position: inside;">Adonis JS</div>
@@ -128,9 +135,10 @@
 						
 					</div>
 				</div>
-
+				
+				<div id="trigger8"></div>
 				<div class="row">
-					<div class="column">
+					<div id="fade8" class="column">
 						
 							<div class="description topSpace" style="margin-bottom: 0;">
 				       			<p style="margin-bottom: 2px;">Get a website that looks beautiful and actually works.
@@ -148,8 +156,8 @@
 
 				<div class="row">
 					<div class="column" style="width: 60%; padding-left: 0; margin-left: 14px;">
-						
-						<div class="description topSpace" style="margin-bottom: 0;">
+						<div id="trigger9"></div>
+						<div id="fade9" class="description topSpace" style="margin-bottom: 0;">
 	       		 			<div class="content" style="margin-bottom: 2px;">
 				       		 	<div class="header">
 				       		 		<h2>Know me more of a person than a developer :</h2>
@@ -166,9 +174,10 @@
 
 					</div>
 				</div>
-
+				
+				<div id="trigger10"></div>
 				<div class="row">
-					<div class="column" style="width: 60%; padding-left: 0; margin-left: 14px;">
+					<div id="fade10" class="column" style="width: 60%; padding-left: 0; margin-left: 14px;">
 						
 						<div class="description topSpace" style="margin-bottom: 0;">
 	       		 			<div class="content" style="margin-bottom: 2px;">
@@ -252,5 +261,6 @@
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js" ></script>
   	<script type="text/javascript" src="assets/js/geometryBG.js" ></script>
   	<script type="text/javascript" src="assets/js/indexJS.js" ></script>
+
 	</body>
 </html>

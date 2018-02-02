@@ -140,15 +140,134 @@ $("#project7").on("click", function(){
 	$('.ui.modal').modal('show').transition('flash');
 });
 
-
+  //CONTACT ME TODAY
 $("#contactMeToday").on("click", function(){
-  // $("#readMoreTitle").text(readMore.project7.title);
-  // $("#readMoreImage").attr("src", readMore.project7.image);
-  // $("#readMoreDes").html(readMore.project7.description);
-  // $("#readMoreLink").attr("href", readMore.project7.link);
-
   $('.ui.basic.modal').modal('show').transition('flash');
 });
+
+
+//FADE IN & FADE OUT (SCROLLMAGIC)
+var controller = new ScrollMagic.Controller();
+
+const anime1 = $("#fade1")
+const scene1 = new ScrollMagic.Scene({triggerElement: '#trigger1', duration: 200})
+                                  .on('enter', function(){
+                                    anime1.css("transition", "opacity 0.8s")
+                                    anime1.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime1.css("transition", "opacity 2s")
+                                     anime1.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime2 = $("#fade2")
+const scene2 = new ScrollMagic.Scene({triggerElement: '#trigger2', duration: 200})
+                                  .on('enter', function(){
+                                    anime2.css("transition", "opacity 0.8s")
+                                    anime2.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime2.css("transition", "opacity 2s")
+                                     anime2.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime3 = $("#fade3")
+const scene3 = new ScrollMagic.Scene({triggerElement: '#trigger3', duration: 500})
+                                  .on('enter', function(){
+                                    anime3.css("transition", "opacity 0.8s")
+                                    anime3.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime3.css("transition", "opacity 2s")
+                                     anime3.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime4 = $("#fade4")
+const scene4 = new ScrollMagic.Scene({triggerElement: '#trigger4', duration: 465})
+                                  .on('enter', function(){
+                                    anime4.css("transition", "opacity 0.8s")
+                                    anime4.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime4.css("transition", "opacity 2s")
+                                     anime4.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime5 = $("#fade5")
+const scene5 = new ScrollMagic.Scene({triggerElement: '#trigger5', duration: 435})
+                                  .on('enter', function(){
+                                    anime5.css("transition", "opacity 0.8s")
+                                    anime5.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime5.css("transition", "opacity 2s")
+                                     anime5.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime6 = $("#fade6")
+const scene6 = new ScrollMagic.Scene({triggerElement: '#trigger6', duration: 220})
+                                  .on('enter', function(){
+                                    anime6.css("transition", "opacity 0.8s")
+                                    anime6.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                  anime6.css("transition", "opacity 2s")
+                                  anime6.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime7 = $("#fade7")
+const scene7 = new ScrollMagic.Scene({triggerElement: '#trigger7', duration: 200})
+                                  .on('enter', function(){
+                                    anime7.css("transition", "opacity 0.8s")
+                                    anime7.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime7.css("transition", "opacity 2s")
+                                    anime7.css("opacity", 0);
+                                  })
+                                  .addTo(controller);  
+
+const anime8 = $("#fade8")
+const scene8 = new ScrollMagic.Scene({triggerElement: '#trigger8', duration: 200})
+                                  .on('enter', function(){
+                                    anime8.css("transition", "opacity 0.8s")
+                                    anime8.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime8.css("transition", "opacity 2s")
+                                    anime8.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime9 = $("#fade9")
+const scene9 = new ScrollMagic.Scene({triggerElement: '#trigger9', duration: 300})
+                                  .on('enter', function(){
+                                    anime9.css("transition", "opacity 0.8s")
+                                    anime9.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime9.css("transition", "opacity 2s")
+                                    anime9.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
+
+const anime10 = $("#fade10")
+const scene10 = new ScrollMagic.Scene({triggerElement: '#trigger10', duration: 200})
+                                  .on('enter', function(){
+                                    anime10.css("transition", "opacity 0.8s")
+                                    anime10.css("opacity", 1.9);
+                                  })
+                                  .on('leave', function(){
+                                    anime10.css("transition", "opacity 2s")
+                                    anime10.css("opacity", 0);
+                                  })
+                                  .addTo(controller);
 
 
 

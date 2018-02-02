@@ -7,3 +7,38 @@ p {
 	color: #ffffff; 
 	font-size: 20px;
 }
+
+.ui.grid .row {
+	padding-bottom: 4rem;
+}
+
+#fade1 {
+	opacity: 0;
+}
+#fade2 {
+	opacity: 0;
+}
+#fade3 {
+	opacity: 0;
+}
+#fade4 {
+	opacity: 0;
+}
+#fade5 {
+	opacity: 0;
+}
+#fade6 {
+	opacity: 0;
+}
+#fade7 {
+	opacity: 0;
+}
+#fade8 {
+	opacity: 0;
+}
+#fade9 {
+	opacity: 0;
+}
+#fade10 {
+	opacity: 0;
+}
