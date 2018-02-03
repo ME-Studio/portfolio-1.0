@@ -45,25 +45,25 @@ $(document).ready(function(){
     //PROJECT DETAILS
 var readMore = {
 	project1:
-   { title: 'International Security Planner',
-     image: '/assets/picture/Photo-Coll.jpg',
-     description: '<div class="ui header">Enim voluptatem sit rerum saepe eius asperiores eveniet id sit.</div> Enim libero ratione aliquid. Quidem dolore et maxime reiciendis dolor et error minus nihil. Et sequi nobis minima est repudiandae maiores neque enim. ',
-     link: '/' },
+   { title: 'Yelp Camp',
+     image: '/assets/picture/Yelpcamp-desc.png',
+     description: '<div class="ui header">Yelp look alike for campgrounds and camping sites.</div> It was built to give the users a friendly and less complex envirnoment. A user can post his own campgrounds in the website after authentication or search for a campground to take a break from busy life. A campground can be rated and commented by the users who visited it. Campgrounds will be verified on user\'s request. <br /><strong>Come let\'s go camping.</strong>',
+     link: 'https://me-studio-yelpcamp.herokuapp.com/' },
   project2:
-   { title: 'Central Solutions Supervisor',
-     image: '/assets/picture/Photo-Coll.jpg',
-     description: '<div class="ui header">Blanditiis omnis iste culpa magnam expedita.</div> Cupiditate accusamus eius temporibus quisquam sint numquam reiciendis et nulla. Ipsa aut eligendi sint numquam atque et totam numquam. Nemo quam dolorum. Labore maxime distinctio blanditiis dolores. Et voluptatibus eos nostrum vero. Ullam facilis est id officia.',
-     link: '/projects' },
+   { title: 'Blop',
+     image: '/assets/picture/Blop-desc.png',
+     description: '<div class="ui header">Blop - The blog</div> Blop is the least complex blog site you can ever experience. Blop comes with all the tools to create a elegant blog. It doesn\'t provide any unnecessary situation to confuse the users. <br /><strong>Blop - The most elegant blog!</strong>',
+     link: 'https://me-studio-blop.herokuapp.com/blogs' },
   project3:
-   { title: 'Dynamic Communications Representative',
-     image: '/assets/picture/iwan-shimko-334323.jpg',
-     description: '<div class="ui header">Vitae mollitia numquam qui.</div> Totam minus architecto eligendi. Sunt dicta est. Veritatis libero architecto aut dignissimos. Alias aliquid similique nisi non excepturi molestias. Numquam dicta sed voluptas. Nulla dicta ut ab velit quibusdam sed. Expedita voluptatibus est tempore nisi atque qui eaque provident molestiae. Qui aut doloribus omnis vel quibusdam tempora. Culpa quasi quo qui fuga officiis ipsum. Culpa libero quibusdam dolorem.',
-     link: '/' },
+   { title: 'RGB Color Game',
+     image: '/assets/picture/RgbColorGame-desc.png',
+     description: '<div class="ui header">Memory genre game</div> This simple but powerful game was created when I faced difficulty in understanding and identifying the RGB. RGB Color Game helps the users to identify the color they\'re dealing with. It has various difficulties to master the RGB system. <br /><strong>Let the game start!</strong>  ',
+     link: '' },
   project4:
-   { title: 'Dynamic Applications Facilitator',
-     image: '/assets/picture/Photo-Coll.jpg',
-     description: '<div class="ui header">Aut aut sapiente fugit similique provident eos maiores corrupti. </div>Sint dolor consequatur cupiditate sit sit perspiciatis rerum et. Officiis qui beatae ratione alias quo modi consectetur commodi quo. Et totam blanditiis occaecati vel aut provident adipisci autem adipisci. Reiciendis praesentium maxime quis est et repellendus mollitia deserunt.Esse similique corrupti voluptas sit. Quis et in aut optio. Reiciendis aperiam cupiditate dolores dolore non rerum molestiae earum. Numquam perferendis aut.',
-     link: '/projects' },
+   { title: 'Patatap Clone',
+     image: '/assets/picture/Patatap-desc.jpg',
+     description: '<div class="ui header">Let\'s say its an indian version of Patatap </div> Creating a fussion version of Patatap was the ultimate aim, involving indian arts as the vectors. All these are planned to be done using powerful frameworks like paper and howler JS. <br /><strong>Hold on! Site is not hosted yet.</strong>',
+     link: '' },
   project5:
    { title: 'Global Accounts Manager',
      image: '/assets/picture/Photo-Coll.jpg',
@@ -88,6 +88,7 @@ $("#project1").on("click", function(){
 	$("#readMoreImage").attr("src", readMore.project1.image);
 	$("#readMoreDes").html(readMore.project1.description);
 	$("#readMoreLink").attr("href", readMore.project1.link);
+  $("#readMoreLink").removeClass('disabled');
 
 	$('.ui.modal').modal('show').transition('flash');
 });
@@ -96,6 +97,7 @@ $("#project2").on("click", function(){
 	$("#readMoreImage").attr("src", readMore.project2.image);
 	$("#readMoreDes").html(readMore.project2.description);
 	$("#readMoreLink").attr("href", readMore.project2.link);
+  $("#readMoreLink").removeClass('disabled');
 
 	$('.ui.modal').modal('show').transition('flash');
 });
@@ -104,6 +106,7 @@ $("#project3").on("click", function(){
 	$("#readMoreImage").attr("src", readMore.project3.image);
 	$("#readMoreDes").html(readMore.project3.description);
 	$("#readMoreLink").attr("href", readMore.project3.link);
+  $("#readMoreLink").addClass('disabled');
 
 	$('.ui.modal').modal('show').transition('flash');
 });
@@ -112,6 +115,7 @@ $("#project4").on("click", function(){
 	$("#readMoreImage").attr("src", readMore.project4.image);
 	$("#readMoreDes").html(readMore.project4.description);
 	$("#readMoreLink").attr("href", readMore.project4.link);
+  $("#readMoreLink").addClass('disabled');
 
 	$('.ui.modal').modal('show').transition('flash');
 });
